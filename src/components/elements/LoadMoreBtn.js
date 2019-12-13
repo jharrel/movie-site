@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import { StyledLoadMoreBtn } from '../styles/StyledLoadMoreBtn';
 
 const LoadMoreBtn = ({ text, callback }) => (
-    <StyledLoadMoreBtn type="button" onClick={callback} >
-        {text}
-    </StyledLoadMoreBtn>
+  <StyledLoadMoreBtn type="button" onClick={callback}>
+    {text}
+  </StyledLoadMoreBtn>
 )
 
-LoadMoreBtn.prototypes = {
-    text: PropTypes.string,
-    callback: PropTypes.func,
+LoadMoreBtn.propTypes = {
+  text: PropTypes.string,
+  callback: PropTypes.func,
 }
 
-export default LoadMoreBtn
+export default LoadMoreBtn;
